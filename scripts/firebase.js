@@ -1,1 +1,1 @@
-/*global Firebase */
+global Firebase 
