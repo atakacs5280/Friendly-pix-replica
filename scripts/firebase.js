@@ -1,1 +1,1 @@
-global Firebase 
+var = firebase; 
