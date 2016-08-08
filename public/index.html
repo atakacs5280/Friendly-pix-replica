@@ -348,7 +348,17 @@
 <link rel="stylesheet" type="text/css" href="/bower_components/sweetalert/dist/sweetalert.css">
 
 <!-- Firebase -->
-<!-- TODO(DEVELOPER): Paste the initialization snippet from: Firebase Console > Add Firebase to your web app. -->
+<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyASeKTKNWcX8mJpEe0gpoBhyjP_rWnc384",
+    authDomain: "friendly-pics-replica.firebaseapp.com",
+    databaseURL: "https://friendly-pics-replica.firebaseio.com",
+    storageBucket: "friendly-pics-replica.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
 
 <!-- Firebase UI for Auth -->
 <script src="https://www.gstatic.com/firebasejs/ui/live/0.4/firebase-ui-auth.js"></script>
@@ -366,19 +376,19 @@
 </script>
 
 <!-- Friendly Pix ES5 scripts -->
-<script src="/lib/utils.js"></script>
-<script src="/lib/firebase.js"></script>
-<script src="/lib/auth.js"></script>
-<script src="/lib/search.js"></script>
-<script src="/lib/uploader.js"></script>
-<script src="/lib/userpage.js"></script>
-<script src="/lib/post.js"></script>
-<script src="/lib/feed.js"></script>
-<script src="/lib/routing.js"></script>
+<!--<script src="/lib/utils.js"></script>-->
+<!--<script src="/lib/firebase.js"></script>-->
+<!--<script src="/lib/auth.js"></script>-->
+<!--<script src="/lib/search.js"></script>-->
+<!--<script src="/lib/uploader.js"></script>-->
+<!--<script src="/lib/userpage.js"></script>-->
+<!--<script src="/lib/post.js"></script>-->
+<!--<script src="/lib/feed.js"></script>-->
+<!--<script src="/lib/routing.js"></script>-->
 
 <!-- Friendly Pix ES2015 scripts -->
 <!-- Uncomment and replace scripts above to serve ES2015 scripts directly -->
-<!-- <script src="/scripts/utils.js"></script>
+<script src="/scripts/utils.js"></script>
 <script src="/scripts/firebase.js"></script>
 <script src="/scripts/auth.js"></script>
 <script src="/scripts/search.js"></script>
@@ -386,6 +396,6 @@
 <script src="/scripts/userpage.js"></script>
 <script src="/scripts/post.js"></script>
 <script src="/scripts/feed.js"></script>
-<script src="/scripts/routing.js"></script> -->
+<script src="/scripts/routing.js"></script> 
 </body>
 </html>
